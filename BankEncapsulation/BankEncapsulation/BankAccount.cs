@@ -8,13 +8,13 @@ namespace BankEncapsulation
 {
     public class BankAccount
     {
-        public static double balance = 0;
+        private static double balance = 0;
 
-        public void Deposit(double amount)
+        public static  double Deposit(double amount)
         {
-            balance += amount;
+            return balance += amount;
         }
-        public static double GetBalance()
+        public  static double GetBalance()
         {
             return balance;
         }

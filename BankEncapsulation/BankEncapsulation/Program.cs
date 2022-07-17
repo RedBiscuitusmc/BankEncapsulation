@@ -6,7 +6,8 @@
         {
             BankAccount account = new BankAccount();
             double amount = 100;
-            BankAccount.balance = amount;
+            BankAccount.Deposit(amount);
+
 
             Console.WriteLine(BankAccount.GetBalance());
         }
